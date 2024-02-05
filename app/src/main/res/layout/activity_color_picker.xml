@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorPicker"
+    android:background="@color/background"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <com.skydoves.colorpickerview.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <com.skydoves.colorpickerview.sliders.AlphaSlideBar
+            android:id="@+id/alphaSlideBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:selector_AlphaSlideBar="@drawable/colorpickerview_wheel"
+            app:borderColor_AlphaSlideBar="@android:color/darker_gray"
+            app:borderSize_AlphaSlideBar="5"
+            android:layout_marginTop="15dp"/>
+
+        <com.skydoves.colorpickerview.sliders.BrightnessSlideBar
+            android:id="@+id/brightnessSlide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:selector_BrightnessSlider="@drawable/colorpickerview_wheel"
+            app:borderColor_BrightnessSlider="@android:color/darker_gray"
+            app:borderSize_BrightnessSlider="5"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp">
+
+            <LinearLayout
+                android:id="@+id/colorLayout"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/colorCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/colorName"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:hint="@string/hisaveTone"
+                android:background="@color/saveBar"
+                android:textColorHint="@color/textColorHint"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/oswald"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:inputType="text"
+                android:maxLength="25"
+                android:layout_gravity="end"
+                android:gravity="center"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:gravity="end">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/goBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="9dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/atras"
+                        android:layout_gravity="center_vertical"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/listButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cdColorList"
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/oswald"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/saveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buttonSaveTone"
+                        android:textColor="@color/textColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/oswald"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

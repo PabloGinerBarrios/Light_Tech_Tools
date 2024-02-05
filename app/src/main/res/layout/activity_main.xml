@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/lightTechTools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aplicationName"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:fontFamily="@font/oswald"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardColorPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardColorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lightTechTools"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:textAlignment="center"
+        app:cardCornerRadius="9dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/textColorPicker"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:fontFamily="@font/oswald"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardColorPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:textAlignment="center"
+        app:cardCornerRadius="9dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/camara"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:fontFamily="@font/oswald"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardColorList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:textAlignment="center"
+        app:cardCornerRadius="9dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cdColorList"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:fontFamily="@font/oswald"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDmxCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardColorList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:textAlignment="center"
+        app:cardCornerRadius="9dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dmxCalculator"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:fontFamily="@font/oswald"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

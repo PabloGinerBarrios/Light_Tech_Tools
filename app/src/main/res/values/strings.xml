@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Evaluable_2</string>
+    <string name="aplicationName">Light Tech Tools</string>
+    <string name="textColorPicker">Color Picker</string>
+    <string name="camara">Camara</string>
+    <string name="cdCameraSwitcher">Press to switch the camera</string>
+    <string name="cdCameraTaker">Press to take a photo</string>
+    <string name="cdColorList">Color List</string>
+    <string name="cdPhotoView">Press to view the capture</string>
+    <string name="hisaveTone">Escribe el nombre del tono</string>
+    <string name="buttonSaveTone">Guardar tono</string>
+    <string name="colorListTitle">Color List</string>
+    <string name="dmxCalculator">DMX Calculator</string>
+    <string name="dmxTitle">Channel Selector</string>
+    <string name="unitButtonUpImageDescription">Boton para incrementar una unidad</string>
+    <string name="decButtonUpImageDescription">Boton para incrementar una decena</string>
+    <string name="centButtonUpImageDescription">Boton para incrementar una centena</string>
+    <string name="unitButtonDownImageDescription">Boton para sustrar una unidad</string>
+    <string name="decButtonDownImageDescription">Boton para sustraer una decena</string>
+    <string name="centButtonDownImageDescription">Boton para sustraer una centena</string>
+    <string name="initNumberDmxCalculator">0</string>
+    <string name="dipSwitch">DIP Switch</string>
+    <string name="number1">1</string>
+    <string name="number2">2</string>
+    <string name="number3">3</string>
+    <string name="number4">4</string>
+    <string name="number5">5</string>
+    <string name="number6">6</string>
+    <string name="number7">7</string>
+    <string name="number8">8</string>
+    <string name="number9">9</string>
+</resources>
